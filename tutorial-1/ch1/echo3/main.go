@@ -1,6 +1,6 @@
 // More efficient solution than combine new string every loop
 // less cost than Echo2
-package ch1
+package main
 
 import (
 	"fmt"
@@ -8,6 +8,6 @@ import (
 	"strings"
 )
 
-func Echo3() {
+func main() {
 	fmt.Println(strings.Join(os.Args[1:], " "))
 }
