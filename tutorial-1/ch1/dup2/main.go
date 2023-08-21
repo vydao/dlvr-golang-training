@@ -13,8 +13,7 @@ func main() {
 		countLines(os.Stdin, counts)
 	} else {
 		for _, arg := range files {
-			fmt.Println(arg)
-			f, err := os.Open("data.txt")
+			f, err := os.Open(arg)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "dup2: %v\n", err)
 				continue
